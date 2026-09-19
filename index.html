@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>Sheikh Farid - Portfolio PWA</title>
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('theme') || localStorage.getItem('sf_portfolio_theme');
+          var mode = saved === 'light' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', mode);
+          if (mode === 'light') {
+            document.documentElement.classList.add('light-theme');
+          } else {
+            document.documentElement.classList.remove('light-theme');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <meta name="description" content="Full-stack & mobile developer portfolio and Progressive Web App with offline caching, Android WebView integration, and interactive project showcase." />
+    <meta property="og:title" content="Sheikh Farid - Portfolio PWA" />
+    <meta property="og:description" content="Full-stack & mobile developer portfolio and Progressive Web App with offline caching, Android WebView integration, and interactive project showcase." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="SF Portfolio" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500/20 selection:text-cyan-300">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

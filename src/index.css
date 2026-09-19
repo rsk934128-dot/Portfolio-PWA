@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   High-Contrast Light Theme Styles
+   Activated via html.light-theme or [data-theme="light"]
+   ========================================================================== */
+
+html.light-theme,
+[data-theme="light"] {
+  color-scheme: light;
+}
+
+html.light-theme body,
+[data-theme="light"] body {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+/* Page canvas & full-screen containers */
+html.light-theme .bg-slate-950,
+[data-theme="light"] .bg-slate-950 {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+/* Card & Surface Containers */
+html.light-theme .bg-slate-900,
+[data-theme="light"] .bg-slate-900,
+html.light-theme .bg-slate-900\/60,
+[data-theme="light"] .bg-slate-900\/60,
+html.light-theme .bg-slate-900\/70,
+[data-theme="light"] .bg-slate-900\/70,
+html.light-theme .bg-slate-900\/80,
+[data-theme="light"] .bg-slate-900\/80,
+html.light-theme .bg-slate-900\/90,
+[data-theme="light"] .bg-slate-900\/90 {
+  background-color: #ffffff !important;
+}
+
+/* Subtle inset panels & backdrops */
+html.light-theme .bg-slate-950\/40,
+[data-theme="light"] .bg-slate-950\/40,
+html.light-theme .bg-slate-950\/50,
+[data-theme="light"] .bg-slate-950\/50,
+html.light-theme .bg-slate-950\/60,
+[data-theme="light"] .bg-slate-950\/60,
+html.light-theme .bg-slate-950\/70,
+[data-theme="light"] .bg-slate-950\/70,
+html.light-theme .bg-slate-950\/80,
+[data-theme="light"] .bg-slate-950\/80,
+html.light-theme .bg-slate-950\/85,
+[data-theme="light"] .bg-slate-950\/85 {
+  background-color: #f1f5f9 !important;
+}
+
+/* Text Hierarchy - High Contrast Slate */
+html.light-theme .text-white,
+[data-theme="light"] .text-white,
+html.light-theme .text-slate-100,
+[data-theme="light"] .text-slate-100 {
+  color: #0f172a !important;
+}
+
+html.light-theme .text-slate-200,
+[data-theme="light"] .text-slate-200 {
+  color: #1e293b !important;
+}
+
+html.light-theme .text-slate-300,
+[data-theme="light"] .text-slate-300 {
+  color: #334155 !important;
+}
+
+html.light-theme .text-slate-400,
+[data-theme="light"] .text-slate-400 {
+  color: #475569 !important;
+}
+
+html.light-theme .text-slate-500,
+[data-theme="light"] .text-slate-500 {
+  color: #64748b !important;
+}
+
+/* Borders - Clean & High Contrast */
+html.light-theme .border-slate-800,
+[data-theme="light"] .border-slate-800,
+html.light-theme .border-slate-800\/80,
+[data-theme="light"] .border-slate-800\/80,
+html.light-theme .border-slate-800\/70,
+[data-theme="light"] .border-slate-800\/70,
+html.light-theme .border-slate-800\/60,
+[data-theme="light"] .border-slate-800\/60,
+html.light-theme .border-slate-800\/50,
+[data-theme="light"] .border-slate-800\/50,
+html.light-theme .border-slate-900,
+[data-theme="light"] .border-slate-900,
+html.light-theme .border-slate-900\/80,
+[data-theme="light"] .border-slate-900\/80,
+html.light-theme .border-slate-700,
+[data-theme="light"] .border-slate-700,
+html.light-theme .border-slate-700\/80,
+[data-theme="light"] .border-slate-700\/80 {
+  border-color: #cbd5e1 !important; /* slate-300 */
+}
+
+/* Brand Cyan Accent Colors in Light Mode */
+html.light-theme .text-cyan-400,
+[data-theme="light"] .text-cyan-400 {
+  color: #0284c7 !important; /* sky-600 */
+}
+
+html.light-theme .text-cyan-300,
+[data-theme="light"] .text-cyan-300 {
+  color: #0369a1 !important; /* sky-700 */
+}
+
+html.light-theme .bg-cyan-950\/40,
+[data-theme="light"] .bg-cyan-950\/40,
+html.light-theme .bg-cyan-950\/50,
+[data-theme="light"] .bg-cyan-950\/50,
+html.light-theme .bg-cyan-950\/60,
+[data-theme="light"] .bg-cyan-950\/60,
+html.light-theme .bg-cyan-950\/70,
+[data-theme="light"] .bg-cyan-950\/70 {
+  background-color: #e0f2fe !important; /* sky-100 */
+}
+
+html.light-theme .border-cyan-800\/30,
+[data-theme="light"] .border-cyan-800\/30,
+html.light-theme .border-cyan-800\/40,
+[data-theme="light"] .border-cyan-800\/40,
+html.light-theme .border-cyan-500\/30,
+[data-theme="light"] .border-cyan-500\/30,
+html.light-theme .border-cyan-500\/20,
+[data-theme="light"] .border-cyan-500\/20 {
+  border-color: #7dd3fc !important; /* sky-300 */
+}
+
+/* Code & Pre Blocks */
+html.light-theme pre.bg-slate-950,
+[data-theme="light"] pre.bg-slate-950 {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+}
+
+html.light-theme code.bg-slate-950,
+[data-theme="light"] code.bg-slate-950 {
+  background-color: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+/* Modal Backdrops & Containers */
+html.light-theme #android-companion-modal-container,
+[data-theme="light"] #android-companion-modal-container,
+html.light-theme #project-detail-modal-card,
+[data-theme="light"] #project-detail-modal-card,
+html.light-theme #resume-modal-container,
+[data-theme="light"] #resume-modal-container {
+  background-color: #ffffff !important;
+  border-color: #94a3b8 !important;
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25) !important;
+}
+
+/* Ambient glow subtle adjustment */
+html.light-theme .blur-3xl,
+[data-theme="light"] .blur-3xl,
+html.light-theme .blur-2xl,
+[data-theme="light"] .blur-2xl {
+  opacity: 0.2 !important;
+}

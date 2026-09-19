@@ -1,0 +1,6 @@
+{
+  "name": "Sheikh Farid - Portfolio PWA",
+  "description": "Full-stack & mobile developer portfolio and Progressive Web App with offline caching, Android WebView integration, and interactive project showcase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
